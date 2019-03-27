@@ -1,6 +1,7 @@
 <Project>
 
 <Target Name="RunResgen">
+ <Delete Files="Output.resources" />
  <GenerateResource
     ExecuteAsTool="false"
     SdkToolsPath="$(TargetFrameworkSDKToolsDirectory)"
