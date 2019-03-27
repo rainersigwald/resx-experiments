@@ -1,0 +1,12 @@
+<Project>
+
+<Target Name="RunResgen">
+ <GenerateResource
+    ExecuteAsTool="false"
+    SdkToolsPath="$(TargetFrameworkSDKToolsDirectory)"
+    Sources="OneResource.resx"
+    StateFile="Test.GenerateResource.cache"
+    OutputResources="Output.resources" />
+</Target>
+
+</Project>
