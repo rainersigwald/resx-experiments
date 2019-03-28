@@ -7,6 +7,7 @@ using System.Resources;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 using System.Xml.Linq;
 
 namespace resx2resx
@@ -50,19 +51,38 @@ namespace resx2resx
 
             // write updated resx
 
-            // Load as xml
-            var rawDocument = XElement.Load(args[0], LoadOptions.PreserveWhitespace);
+            var doc = new XmlDocument() { PreserveWhitespace = true };
+            doc.Load(args[0]);
 
-            foreach (var typeConverterSerializedDataNode in rawDocument.Descendants("data")
-                .Where(d => d.Attribute("mimetype").Value == ResXResourceWriter.ByteArraySerializedObjectMimeType))
+            foreach (var typeConverterSerializedDataNode in doc.SelectNodes($"//data[@mimetype=\"{ResXResourceWriter.ByteArraySerializedObjectMimeType}\"]"))
             {
-                var binaryFormatterSerializedDataNode = new XElement(typeConverterSerializedDataNode);
+                var nodeToUpdate = (XmlNode)typeConverterSerializedDataNode;
 
-                binaryFormatterSerializedDataNode.Attribute("mimetype").Value = ResXResourceWriter.BinSerializedObjectMimeType;
+                var resourceName = nodeToUpdate.Attributes["name"].Value;
 
+                nodeToUpdate.Attributes["mimetype"].Value = ResXResourceWriter.BinSerializedObjectMimeType;
+
+                nodeToUpdate["value"].InnerText = "somehting"; //ArmoredBinaryFormattedValue();
+                //    }
+                //}
             }
 
-            rawDocument.Save("output.txt");
+            doc.Save("output.txt");
+
+            //var rawDocument = XElement.Load(args[0], LoadOptions.PreserveWhitespace);
+
+            //foreach (var typeConverterSerializedDataNode in rawDocument.Descendants("data")
+            //    .Where(d => d.Attribute("mimetype").Value == ResXResourceWriter.ByteArraySerializedObjectMimeType))
+            //{
+            //    var binaryFormatterSerializedDataNode = new XElement(typeConverterSerializedDataNode);
+
+            //    binaryFormatterSerializedDataNode.Attribute("mimetype").Value = ResXResourceWriter.BinSerializedObjectMimeType;
+
+            //}
+
+            //rawDocument.Save("output.txt");
         }
+
+        private static string ArmoredBinaryFormattedValue() { throw new NotImplementedException(); }
     }
 }
