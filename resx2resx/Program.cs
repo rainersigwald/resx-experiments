@@ -16,7 +16,7 @@ namespace resx2resx
     {
         static void Main(string[] args)
         {
-            var resources = new List<(string name, object value)>();
+            var resources = new Dictionary<string, object>();
 
             // read resx
 
@@ -33,19 +33,7 @@ namespace resx2resx
                     var node = (ResXDataNode)resEnum.Value;
 
                     var value = node.GetValue(typeResolutionService);
-                    resources.Add((name, value));
-
-                    //// serialize object "like resourcewriter"
-
-                    //var bf = new BinaryFormatter();
-                    //using (var ms = new MemoryStream())
-                    //{
-                    //    bf.Serialize(ms, value);
-
-                    //    var bytes = ms.ToArray();
-
-                    //    resources.Add((name, bytes));
-                    //}
+                    resources.Add(name, value);
                 }
             }
 
@@ -62,7 +50,7 @@ namespace resx2resx
 
                 nodeToUpdate.Attributes["mimetype"].Value = ResXResourceWriter.BinSerializedObjectMimeType;
 
-                nodeToUpdate["value"].InnerText = "somehting"; //ArmoredBinaryFormattedValue();
+                nodeToUpdate["value"].InnerText = ArmoredBinaryFormattedValue(resources[resourceName]);
                 //    }
                 //}
             }
@@ -83,6 +71,17 @@ namespace resx2resx
             //rawDocument.Save("output.txt");
         }
 
-        private static string ArmoredBinaryFormattedValue() { throw new NotImplementedException(); }
+        private static string ArmoredBinaryFormattedValue(object value) {
+            // serialize object "like resourcewriter"
+
+            var bf = new BinaryFormatter();
+            using var ms = new MemoryStream();
+            {
+                bf.Serialize(ms, value);
+
+                var bytes = ms.ToArray();
+            }
+
+        }
     }
 }
