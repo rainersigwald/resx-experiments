@@ -51,37 +51,20 @@ namespace resx2resx
                 nodeToUpdate.Attributes["mimetype"].Value = ResXResourceWriter.BinSerializedObjectMimeType;
 
                 nodeToUpdate["value"].InnerText = ArmoredBinaryFormattedValue(resources[resourceName]);
-                //    }
-                //}
             }
 
-            doc.Save("output.txt");
-
-            //var rawDocument = XElement.Load(args[0], LoadOptions.PreserveWhitespace);
-
-            //foreach (var typeConverterSerializedDataNode in rawDocument.Descendants("data")
-            //    .Where(d => d.Attribute("mimetype").Value == ResXResourceWriter.ByteArraySerializedObjectMimeType))
-            //{
-            //    var binaryFormatterSerializedDataNode = new XElement(typeConverterSerializedDataNode);
-
-            //    binaryFormatterSerializedDataNode.Attribute("mimetype").Value = ResXResourceWriter.BinSerializedObjectMimeType;
-
-            //}
-
-            //rawDocument.Save("output.txt");
+            doc.Save("output.resx");
         }
 
-        private static string ArmoredBinaryFormattedValue(object value) {
+        private static string ArmoredBinaryFormattedValue(object value)
+        {
             // serialize object "like resourcewriter"
-
             var bf = new BinaryFormatter();
             using var ms = new MemoryStream();
-            {
-                bf.Serialize(ms, value);
+            bf.Serialize(ms, value);
 
-                var bytes = ms.ToArray();
-            }
-
+            // and return it in an armored array "like resxwriter"
+            return ToBase64WrappedString(ms.ToArray());
         }
 
         private static string ToBase64WrappedString(byte[] data)
