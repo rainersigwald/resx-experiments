@@ -7,6 +7,7 @@ using System.Resources;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml.Linq;
 
 namespace resx2resx
 {
@@ -14,7 +15,7 @@ namespace resx2resx
     {
         static void Main(string[] args)
         {
-            var resources = new List<(string name, byte[] bytes)>();
+            var resources = new List<(string name, object value)>();
 
             // read resx
 
@@ -30,24 +31,38 @@ namespace resx2resx
                     string name = (string)resEnum.Key;
                     var node = (ResXDataNode)resEnum.Value;
 
-                    var type = node.GetValueTypeName(typeResolutionService);
                     var value = node.GetValue(typeResolutionService);
+                    resources.Add((name, value));
 
-                    // serialize object "like resourcewriter"
+                    //// serialize object "like resourcewriter"
 
-                    var bf = new BinaryFormatter();
-                    using (var ms = new MemoryStream())
-                    {
-                        bf.Serialize(ms, value);
+                    //var bf = new BinaryFormatter();
+                    //using (var ms = new MemoryStream())
+                    //{
+                    //    bf.Serialize(ms, value);
 
-                        var bytes = ms.ToArray();
+                    //    var bytes = ms.ToArray();
 
-                        resources.Add((name, bytes));
-                    }
+                    //    resources.Add((name, bytes));
+                    //}
                 }
             }
 
             // write updated resx
+
+            // Load as xml
+            var rawDocument = XElement.Load(args[0], LoadOptions.PreserveWhitespace);
+
+            foreach (var typeConverterSerializedDataNode in rawDocument.Descendants("data")
+                .Where(d => d.Attribute("mimetype").Value == ResXResourceWriter.ByteArraySerializedObjectMimeType))
+            {
+                var binaryFormatterSerializedDataNode = new XElement(typeConverterSerializedDataNode);
+
+                binaryFormatterSerializedDataNode.Attribute("mimetype").Value = ResXResourceWriter.BinSerializedObjectMimeType;
+
+            }
+
+            rawDocument.Save("output.txt");
         }
     }
 }
