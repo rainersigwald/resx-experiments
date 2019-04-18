@@ -92,6 +92,5 @@ namespace resx2resx
 
             return raw;
         }
-
     }
 }
