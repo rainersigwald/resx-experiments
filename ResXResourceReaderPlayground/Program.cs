@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
+using System.Resources;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -11,12 +13,17 @@ namespace ResXResourceReaderPlayground
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
-        [STAThread]
         static void Main()
         {
-            Application.EnableVisualStyles();
-            Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Debugger.Launch();
+            Console.WriteLine("yo");
+
+            var resources = new ResXResourceReader("test.resx").GetEnumerator();
+
+            while (resources.MoveNext())
+            {
+                Console.WriteLine($"{resources.Key}: type={resources.Value.GetType()}, value=\"{resources.Value.ToString()}\"");
+            }
         }
     }
 }
