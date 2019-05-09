@@ -1,77 +1,17 @@
-                    <root>
-                        <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
-                            <xsd:element name="root" msdata:IsDataSet="true">
-                                <xsd:complexType>
-                                    <xsd:choice maxOccurs="unbounded">
-                                        <xsd:element name="data">
-                                            <xsd:complexType>
-                                                <xsd:sequence>
-                                                    <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                                                    <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
-                                                </xsd:sequence>
-                                                <xsd:attribute name="name" type="xsd:string" />
-                                                <xsd:attribute name="type" type="xsd:string" />
-                                                <xsd:attribute name="mimetype" type="xsd:string" />
-                                            </xsd:complexType>
-                                        </xsd:element>
-                                        <xsd:element name="resheader">
-                                            <xsd:complexType>
-                                                <xsd:sequence>
-                                                    <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
-                                                </xsd:sequence>
-                                                <xsd:attribute name="name" type="xsd:string" use="required" />
-                                            </xsd:complexType>
-                                        </xsd:element>
-                                    </xsd:choice>
-                                </xsd:complexType>
-                            </xsd:element>
-                        </xsd:schema>
-                        <resheader name="ResMimeType">
-                            <value>text/microsoft-resx</value>
-                        </resheader>
-                        <resheader name="Version">
-                            <value>1.0.0.0</value>
-                        </resheader>
-                        <resheader name="Reader">
-                            <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-                        </resheader>
-                        <resheader name="Writer">
-                            <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=1.0.5000.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-                        </resheader>
-                        <data name="GraphLegend" type="System.String">
-                            <value>Graph Legend</value>
-                            <comment>Used in reports to label the graph legend that pops up</comment>
-                        </data>
-                        <data name="ccResponses" type="System.String">
-                            <value>{0}'s Responses</value>
-                            <comment>Used in challenge checklist tables</comment>
-                        </data>
-                        <data name="ccStrength" type="System.String">
-                            <value>Strength Area</value>
-                            <comment>Used in challenge checklist tables</comment>
-                        </data>
-                        <data name="ccNeutral" type="System.String">
-                            <value>Neutral Area</value>
-                            <comment>Used in challenge checklist tables</comment>
-                        </data>
-                        <data name="ccChallenge" type="System.String">
-                            <value>Challenge Area</value>
-                            <comment>Used in challenge checklist tables</comment>
-                        </data>
-                        <data name="calculation" type="System.String">
-                            <value>Click here for scale calculation</value>
-                            <comment>Used in Profile Scale area of main report to point to resource section scale tables.</comment>
-                        </data>
-                        <data name="PageNumber" type="System.String">
-                            <value>Page </value>
-                            <comment>In footer of PDF report, and used in PDF links</comment>
-                        </data>
-                        <data name="TOC" type="System.String">
-                            <value>Table of Contents</value>
-                            <comment>On second page of PDF report</comment>
-                        </data>
-                        <data name="ParticipantListingAnd">
-                            <value>and</value>
-                            <comment>On title page of PDF, joining two participants in a list</comment>
-                        </data>
-                    </root>
+<root>
+  <resheader name='resmimetype'>
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name='version'>
+    <value>2.0</value>
+  </resheader>
+  <resheader name='reader'>
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name='writer'>
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="MyString">
+    <value>MyValue</value>
+  </data>
+<data name="TextFile1" type="System.Resources.ResXFileRef, System.Windows.Forms"><value>.\tmp_dir\test_file.txt;System.String, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089;Windows-1252</value></data></root>
