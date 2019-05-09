@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "resx2resx", "resx2resx\resx
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DumpingGround", "DumpingGround\DumpingGround.csproj", "{D7211E4E-C110-43F8-83BE-C7F269FC6133}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ResXResourceReaderPlayground", "ResXResourceReaderPlayground\ResXResourceReaderPlayground.csproj", "{C822A7A9-5357-4A74-A674-DF78B4595492}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{D7211E4E-C110-43F8-83BE-C7F269FC6133}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D7211E4E-C110-43F8-83BE-C7F269FC6133}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D7211E4E-C110-43F8-83BE-C7F269FC6133}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C822A7A9-5357-4A74-A674-DF78B4595492}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C822A7A9-5357-4A74-A674-DF78B4595492}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C822A7A9-5357-4A74-A674-DF78B4595492}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C822A7A9-5357-4A74-A674-DF78B4595492}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
