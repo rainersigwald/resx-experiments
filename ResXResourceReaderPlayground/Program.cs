@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Resources;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -17,6 +18,8 @@ namespace ResXResourceReaderPlayground
         {
             Debugger.Launch();
             Console.WriteLine("yo");
+
+            Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 
             var resources = new ResXResourceReader("test.resx").GetEnumerator();
 
