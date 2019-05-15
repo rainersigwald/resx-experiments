@@ -1,0 +1,675 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="splitterButton.Text" xml:space="preserve">
+    <value>Splitter</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="FolderBrowserDialogButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 46</value>
+  </data>
+  <data name="menuesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>604, 370</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="propertyGrid.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="FolderBrowserDialogButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="panelsButton.Text" xml:space="preserve">
+    <value>Panels</value>
+  </data>
+  <data name="multipleControls.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 46</value>
+  </data>
+  <data name="FolderBrowserDialogButton.Text" xml:space="preserve">
+    <value>FolderBrowserDialog</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="mdiParent.Location" type="System.Drawing.Point, System.Drawing">
+    <value>606, 522</value>
+  </data>
+  <data name="&gt;&gt;panelsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="buttonsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 46</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ImageList, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;splitterButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerButton.Name" xml:space="preserve">
+    <value>DateTimePickerButton</value>
+  </data>
+  <data name="calendar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 210</value>
+  </data>
+  <data name="&gt;&gt;mdiParent.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="listViewButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;buttonsButton.Name" xml:space="preserve">
+    <value>buttonsButton</value>
+  </data>
+  <data name="&gt;&gt;ShowExceptionDialogButton.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="splitterButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 46</value>
+  </data>
+  <data name="&gt;&gt;chartControl1.Name" xml:space="preserve">
+    <value>chartControl1</value>
+  </data>
+  <data name="&gt;&gt;buttonsButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="propertyGrid.Text" xml:space="preserve">
+    <value>PropertyGrid</value>
+  </data>
+  <data name="&gt;&gt;calendar.Name" xml:space="preserve">
+    <value>calendar</value>
+  </data>
+  <data name="button4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="buttonsButton.Text" xml:space="preserve">
+    <value>Buttons</value>
+  </data>
+  <data name="mdiParent.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>MenuForm</value>
+  </data>
+  <data name="&gt;&gt;ShowExceptionDialogButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>604, 294</value>
+  </data>
+  <data name="&gt;&gt;panelsButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="dataGridViewButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 46</value>
+  </data>
+  <data name="&gt;&gt;mdiParent.Name" xml:space="preserve">
+    <value>mdiParent</value>
+  </data>
+  <data name="buttonsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="panelsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>606, 446</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>192, 192</value>
+  </data>
+  <data name="multipleControls.Text" xml:space="preserve">
+    <value>Multiple controls</value>
+  </data>
+  <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>604, 218</value>
+  </data>
+  <data name="mdiParent.Text" xml:space="preserve">
+    <value>MDI Parent</value>
+  </data>
+  <data name="mdiParent.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="ShowExceptionDialogButton.Text" xml:space="preserve">
+    <value>ThreadException dialog</value>
+  </data>
+  <data name="button3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;menuesButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;chartControl1.Type" xml:space="preserve">
+    <value>DevExpress.XtraCharts.ChartControl, DevExpress.XtraCharts.v18.2.UI, Version=18.2.7.0, Culture=neutral, PublicKeyToken=b88d1754d700e49a</value>
+  </data>
+  <data name="&gt;&gt;buttonsButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;mdiParent.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="propertyGrid.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;button4.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="dataGridViewButton.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="listViewButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 46</value>
+  </data>
+  <data name="splitterButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>606, 142</value>
+  </data>
+  <data name="&gt;&gt;FolderBrowserDialogButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="FolderBrowserDialogButton.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;splitterButton.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;menuesButton.Name" xml:space="preserve">
+    <value>menuesButton</value>
+  </data>
+  <data name="panelsButton.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxesButton.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;menuesButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Name" xml:space="preserve">
+    <value>button4</value>
+  </data>
+  <data name="ShowExceptionDialogButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 522</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>MainForm</value>
+  </data>
+  <data name="listViewButton.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;chartControl1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxesButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="propertyGrid.Location" type="System.Drawing.Point, System.Drawing">
+    <value>606, 598</value>
+  </data>
+  <data name="DateTimePickerButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 46</value>
+  </data>
+  <data name="calendar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="panelsButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 46</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewButton.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;button4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="buttonsButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="propertyGrid.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 46</value>
+  </data>
+  <data name="mdiParent.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 46</value>
+  </data>
+  <data name="dataGridViewButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>604, 66</value>
+  </data>
+  <data name="chartControl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 663</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="imageList1.ImageStream" mimetype="application/x-microsoft.net.object.binary.base64">
+    <value>
+        AAEAAAD/////AQAAAAAAAAAMAgAAAFdTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj00LjAuMC4w
+        LCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkFAQAAACZTeXN0
+        ZW0uV2luZG93cy5Gb3Jtcy5JbWFnZUxpc3RTdHJlYW1lcgEAAAAERGF0YQcCAgAAAAkDAAAADwMAAABw
+        DgAAAk1TRnQBSQFMAgEBCQEAARgBAAEUAQABEAEAARABAAT/AQkBEAj/AUIBTQE2AQQGAAE2AQQCAAEo
+        AwABQAMAATADAAEBAQABCAYAAQwYAAGAAgABgAMAAoABAAGAAwABgAEAAYABAAKAAgADwAEAAcAB3AHA
+        AQAB8AHKAaYBAAEzBQABMwEAATMBAAEzAQACMwIAAxYBAAMcAQADIgEAAykBAANVAQADTQEAA0IBAAM5
+        AQABgAF8Af8BAAJQAf8BAAGTAQAB1gEAAf8B7AHMAQABxgHWAe8BAAHWAucBAAGQAakBrQIAAf8BMwMA
+        AWYDAAGZAwABzAIAATMDAAIzAgABMwFmAgABMwGZAgABMwHMAgABMwH/AgABZgMAAWYBMwIAAmYCAAFm
+        AZkCAAFmAcwCAAFmAf8CAAGZAwABmQEzAgABmQFmAgACmQIAAZkBzAIAAZkB/wIAAcwDAAHMATMCAAHM
+        AWYCAAHMAZkCAALMAgABzAH/AgAB/wFmAgAB/wGZAgAB/wHMAQABMwH/AgAB/wEAATMBAAEzAQABZgEA
+        ATMBAAGZAQABMwEAAcwBAAEzAQAB/wEAAf8BMwIAAzMBAAIzAWYBAAIzAZkBAAIzAcwBAAIzAf8BAAEz
+        AWYCAAEzAWYBMwEAATMCZgEAATMBZgGZAQABMwFmAcwBAAEzAWYB/wEAATMBmQIAATMBmQEzAQABMwGZ
+        AWYBAAEzApkBAAEzAZkBzAEAATMBmQH/AQABMwHMAgABMwHMATMBAAEzAcwBZgEAATMBzAGZAQABMwLM
+        AQABMwHMAf8BAAEzAf8BMwEAATMB/wFmAQABMwH/AZkBAAEzAf8BzAEAATMC/wEAAWYDAAFmAQABMwEA
+        AWYBAAFmAQABZgEAAZkBAAFmAQABzAEAAWYBAAH/AQABZgEzAgABZgIzAQABZgEzAWYBAAFmATMBmQEA
+        AWYBMwHMAQABZgEzAf8BAAJmAgACZgEzAQADZgEAAmYBmQEAAmYBzAEAAWYBmQIAAWYBmQEzAQABZgGZ
+        AWYBAAFmApkBAAFmAZkBzAEAAWYBmQH/AQABZgHMAgABZgHMATMBAAFmAcwBmQEAAWYCzAEAAWYBzAH/
+        AQABZgH/AgABZgH/ATMBAAFmAf8BmQEAAWYB/wHMAQABzAEAAf8BAAH/AQABzAEAApkCAAGZATMBmQEA
+        AZkBAAGZAQABmQEAAcwBAAGZAwABmQIzAQABmQEAAWYBAAGZATMBzAEAAZkBAAH/AQABmQFmAgABmQFm
+        ATMBAAGZATMBZgEAAZkBZgGZAQABmQFmAcwBAAGZATMB/wEAApkBMwEAApkBZgEAA5kBAAKZAcwBAAKZ
+        Af8BAAGZAcwCAAGZAcwBMwEAAWYBzAFmAQABmQHMAZkBAAGZAswBAAGZAcwB/wEAAZkB/wIAAZkB/wEz
+        AQABmQHMAWYBAAGZAf8BmQEAAZkB/wHMAQABmQL/AQABzAMAAZkBAAEzAQABzAEAAWYBAAHMAQABmQEA
+        AcwBAAHMAQABmQEzAgABzAIzAQABzAEzAWYBAAHMATMBmQEAAcwBMwHMAQABzAEzAf8BAAHMAWYCAAHM
+        AWYBMwEAAZkCZgEAAcwBZgGZAQABzAFmAcwBAAGZAWYB/wEAAcwBmQIAAcwBmQEzAQABzAGZAWYBAAHM
+        ApkBAAHMAZkBzAEAAcwBmQH/AQACzAIAAswBMwEAAswBZgEAAswBmQEAA8wBAALMAf8BAAHMAf8CAAHM
+        Af8BMwEAAZkB/wFmAQABzAH/AZkBAAHMAf8BzAEAAcwC/wEAAcwBAAEzAQAB/wEAAWYBAAH/AQABmQEA
+        AcwBMwIAAf8CMwEAAf8BMwFmAQAB/wEzAZkBAAH/ATMBzAEAAf8BMwH/AQAB/wFmAgAB/wFmATMBAAHM
+        AmYBAAH/AWYBmQEAAf8BZgHMAQABzAFmAf8BAAH/AZkCAAH/AZkBMwEAAf8BmQFmAQAB/wKZAQAB/wGZ
+        AcwBAAH/AZkB/wEAAf8BzAIAAf8BzAEzAQAB/wHMAWYBAAH/AcwBmQEAAf8CzAEAAf8BzAH/AQAC/wEz
+        AQABzAH/AWYBAAL/AZkBAAL/AcwBAAJmAf8BAAFmAf8BZgEAAWYC/wEAAf8CZgEAAf8BZgH/AQAC/wFm
+        AQABIQEAAaUBAANfAQADdwEAA4YBAAOWAQADywEAA7IBAAPXAQAD3QEAA+MBAAPqAQAD8QEAA/gBAAHw
+        AfsB/wEAAaQCoAEAA4ADAAH/AgAB/wMAAv8BAAH/AwAB/wEAAf8BAAL/AgAD/wEAEP0wAAH3D2YwAAH3
+        Af8B8QLwArwHCQG7AWYwAAH3Af8B9AFSATEBdAHzBfQBGQHzAbsBZjAAAfcB/wGZAVkBMgExAVIB8QGT
+        AUYBbwHuAvMBuwFmMAAB9wH/AZkBegFZATIBMQGTAW8CRgFvAvQBuwFmMAABtQH/ARoBoAF6AVkBeQGU
+        ARYBbwJGAvQBuwFmMAAB7wH/AfYBGgKZAc8BkwIWAW8BkwL0AQcBZjAAAbUD/wEJAtUBtAGTARYBkwHx
+        AvQBBwFmMAABuwP/AdwD1QG0Af8BtQHtAZEB9AEHAWYwAAHvA/8B3QHcAtUB3AP/AvUBBwFmMAABtQP/
+        AfQBGQHcAQkBGQH/AbUB7QGRAfUBBwFmMAABuw3/AfUBZjAABdYB1QO0B60wAAHWAgkF3AHWBtUBrTAA
+        BtYC1QO0AbMErTAABvQKAAP9AnMDSwj9EPoQ/QH0BLML9AL9AVEBWQGgAXoBWQExAXMH/RD6ELQB9AGz
+        AvQBswL0CBQB9AL9AVIBWQGgAXoBWQExAXMH/RD6AbQB/wGLAv8BiwH/AYsB/wMJAbUCCQG0AfQBswL0
+        AbMC9AgUAfQC/QFSAVkBoAF6AVkBMQFzB/0Q+gG0Af8EiwP/AgkBtQEAAbUBCQG0AfQEswv0Av0BdAFZ
+        AaABegFZATEBcwf9EPoBtAj/AQkBuwEAAQkBAAG7AbQG9AoAAv0BUgFZAaABegFZATEBcwf9B/oCAAf6
+        AbQB/wSLA/8BCQGRAwkBkQG0AfQEswv0ARwB6wF0AXoBoAF6AVkBMQFLB+sG+gEAAfoCAAb6AbQB/wGL
+        Av8BiwP/ARkF/wG0AfQBswL0AbMC9AgUAfQBHAEbAZkCoALDAZoBHAYbAesF+gEAA/oCAAX6AbQB/wGL
+        Av8BiwH/AYsB/wYJAbQB9AGzAvQBswL0CBQB9AEcARsBGgUcAfcCtAEbAYsCGwHrCvoCAAT6AbQB/wSL
+        A/8GCQG0AfQEswv0ARwBGwKtARsBtAT/AbQBGwKtARsB6wv6AgAD+gG0CP8GCQG0BvQKAAEcA60BGwG0
+        BP8BtAEbA60B6wz6AQAD+gG0Af8EiwP/ARkF/wG0AfQEswv0ARwBGwGzAa0BGwG0BP8BtAEbAtUBGwHr
+        EPoBtAH/AYsC/wGLA/8BCQGRAwkBkQG0AfQBswL0AbMC9AgUAfQBHAIbAdUBGwa0ARsB1QIbAesQ+gG0
+        Af8BiwL/AYsB/wGLAf8BCQG1AQABCQEAAbsBtAH0AbMC9AGzAvQIFAH0ARwOGwHrEPoBtAH/BIsD/wIJ
+        AbUBAAG1AQkBtAH0BLML9A8cAesQ+gG0CP8DCQG1AgkBtAb0CgAQ/RD6ELQWAAT0CQAB9AgAAfQpAAH0
+        Ak8B9AgAA/QGAAP0CAAB/x8AAfQCTwH0BwAB9AEaAUUBGgH0BAAB9AEaAUUBGgH0BgAC9AH/HgAB9AJP
+        AfQGAAL0AUUBJAFFARoB9AIAAfQBGgFFASQBRQL0BAAB9AKYAfQB/wwAB/8KAAH0Ak8B9AcAAfQBGgFF
+        ASQBRQEaAvQBGgFFASQBRQEaAfQEAAH0AZgCTwGXAfQB/wsAB/8KAAH0Ak8B9AgAAfQBGgFFASQBRQIa
+        AUUBJAFFARoB9AQAAfQBmARPAZcB9AH/CAAC/wH0AfEDBwHxAfQC/wIAB/QCTwf0AwAB9AEaAUUBJAJF
+        ASQBRQEaAfQEAAH0AZgCTwGYAfQBcgFPAZcB9AH/BQAC/wH0AfIBBwHtA20B7QEHAfIB9AL/AfQOTwH0
+        BAAB9AEaAUUCJAFFARoB9AQAAvQCTwGYA/QBcgFPAZcB9AH/BAAB/wH0AfMBvAHvAZID7AGSAe8BvAHz
+        AfQB/wH0Dk8B9AQAAfQBGgFFAiQBRQEaAfQFAAH0AfABmAH0AgAC9AFyAU8BlwH0Af8DAAH/DfQB/wf0
+        Ak8H9AMAAfQBGgFFASQCRQEkAUUBGgH0BQAC9AQAAvQBcgFPAZcB9AH/AgAP/wYAAfQCTwH0CAAB9AEa
+        AUUBJAFFAhoBRQEkAUUBGgH0CwAC9AFyAU8BlwH0Af8WAAH0Ak8B9AcAAfQBGgFFASQBRQEaAvQBGgFF
+        ASQBRQEaAfQLAAL0AnIC9BYAAfQCTwH0BgAC9AFFASQBRQEaAfQCAAH0ARoBRQEkAUUC9AsABPQXAAH0
+        Ak8B9AcAAfQBGgFFARoB9AQAAfQBGgFFARoB9A0AAvQYAAH0Ak8B9AgAA/QGAAP0KAAE9AkAAfQIAAH0
+        EwABQgFNAT4HAAE+AwABKAMAAUADAAEwAwABAQEAAQEFAAGAAQEWAAP/gQABAwH/JgABAwH/JgABAwH/
+        JgABAwH/BgAC/wH8AT8B7wH3BP8B/AE/AccB4wH9A/8B/AE/AYMBwQH4A/8B/AE/AQEBgAHwAX8B+AEP
+        AfwBPwGAAQEB4AE/AfgBDwH8AT8BwAEDAcABHwHgAQMCAAHgAQcBgAEPAYADAAHwAQ8BAAEHAYADAAHw
+        AQ8BhgEDAYADAAHgAQcBzwEBAYABAAH8AT8BwAEDAf8BgAL/AfwBPwGAAQEB/wHAAv8B/AE/AQEBgAH/
+        AeEC/wH8AT8BgwHBAf8B8wL/AfwBPwHHAeME/wH8AT8B7wH3Av8WAAs=
+</value>
+  </data>
+  <data name="&gt;&gt;button3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;panelsButton.Name" xml:space="preserve">
+    <value>panelsButton</value>
+  </data>
+  <data name="multipleControls.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 138</value>
+  </data>
+  <data name="DateTimePickerButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewButton.Name" xml:space="preserve">
+    <value>dataGridViewButton</value>
+  </data>
+  <data name="button4.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;calendar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;multipleControls.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ComboBoxesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="multipleControls.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="ShowExceptionDialogButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="ShowExceptionDialogButton.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="calendar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 46</value>
+  </data>
+  <data name="calendar.Text" xml:space="preserve">
+    <value>Calendar</value>
+  </data>
+  <data name="&gt;&gt;FolderBrowserDialogButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewButton.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="ComboBoxesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;propertyGrid.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="buttonsButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 66</value>
+  </data>
+  <data name="dataGridViewButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="panelsButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="&gt;&gt;ShowExceptionDialogButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;multipleControls.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;ComboBoxesButton.Name" xml:space="preserve">
+    <value>ComboBoxesButton</value>
+  </data>
+  <data name="menuesButton.Text" xml:space="preserve">
+    <value>Menus</value>
+  </data>
+  <data name="menuesButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="ComboBoxesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 46</value>
+  </data>
+  <data name="&gt;&gt;calendar.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;FolderBrowserDialogButton.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="ComboBoxesButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 282</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;listViewButton.Name" xml:space="preserve">
+    <value>listViewButton</value>
+  </data>
+  <data name="&gt;&gt;listViewButton.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;menuesButton.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="button3.Text" xml:space="preserve">
+    <value>TreeView, ImageList</value>
+  </data>
+  <data name="&gt;&gt;buttonsButton.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="chartControl1.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;propertyGrid.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="splitterButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="ComboBoxesButton.Text" xml:space="preserve">
+    <value>ComboBoxes</value>
+  </data>
+  <data name="ShowExceptionDialogButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>518, 46</value>
+  </data>
+  <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 46</value>
+  </data>
+  <data name="&gt;&gt;splitterButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dataGridViewButton.Text" xml:space="preserve">
+    <value>DataGridView</value>
+  </data>
+  <data name="&gt;&gt;propertyGrid.Name" xml:space="preserve">
+    <value>propertyGrid</value>
+  </data>
+  <data name="&gt;&gt;propertyGrid.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="DateTimePickerButton.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="DateTimePickerButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 370</value>
+  </data>
+  <data name="chartControl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>300, 200</value>
+  </data>
+  <data name="&gt;&gt;multipleControls.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="button3.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="calendar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>6, 6, 6, 6</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1213, 972</value>
+  </data>
+  <data name="multipleControls.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;multipleControls.Name" xml:space="preserve">
+    <value>multipleControls</value>
+  </data>
+  <data name="menuesButton.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;button3.Name" xml:space="preserve">
+    <value>button3</value>
+  </data>
+  <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 46</value>
+  </data>
+  <data name="menuesButton.Size" type="System.Drawing.Size, System.Drawing">
+    <value>516, 46</value>
+  </data>
+  <data name="&gt;&gt;chartControl1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="listViewButton.Text" xml:space="preserve">
+    <value>ListVew</value>
+  </data>
+  <data name="button4.Text" xml:space="preserve">
+    <value>Content alignment</value>
+  </data>
+  <data name="&gt;&gt;DateTimePickerButton.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="listViewButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>606, 708</value>
+  </data>
+  <data name="&gt;&gt;imageList1.Name" xml:space="preserve">
+    <value>imageList1</value>
+  </data>
+  <data name="splitterButton.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;mdiParent.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="FolderBrowserDialogButton.Location" type="System.Drawing.Point, System.Drawing">
+    <value>26, 446</value>
+  </data>
+  <data name="DateTimePickerButton.Text" xml:space="preserve">
+    <value>DateTimePickerButton</value>
+  </data>
+  <data name="&gt;&gt;panelsButton.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;FolderBrowserDialogButton.Name" xml:space="preserve">
+    <value>FolderBrowserDialogButton</value>
+  </data>
+  <data name="&gt;&gt;ShowExceptionDialogButton.Name" xml:space="preserve">
+    <value>ShowExceptionDialogButton</value>
+  </data>
+  <data name="&gt;&gt;listViewButton.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;calendar.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;splitterButton.Name" xml:space="preserve">
+    <value>splitterButton</value>
+  </data>
+  <data name="&gt;&gt;button3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="imageList1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>217, 17</value>
+  </metadata>
+</root>
