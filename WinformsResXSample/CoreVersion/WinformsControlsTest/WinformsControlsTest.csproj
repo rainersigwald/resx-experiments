@@ -20,7 +20,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
 
-    <PackageReference Include="System.Resources.Extensions" Version="4.6.0-preview7.19306.4" />
   </ItemGroup>
 
 </Project>
