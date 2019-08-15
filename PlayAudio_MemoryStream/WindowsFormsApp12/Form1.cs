@@ -20,10 +20,7 @@ namespace WindowsFormsApp12
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            string file1 = @"c:\Ring08.wav";
-            List<byte> soundBytes = new List<byte>(File.ReadAllBytes(file1));
-            //create media player loading the first half of the sound file
-            MediaPlayer mPlayer = new MediaPlayer(soundBytes.ToArray());
+            MediaPlayer mPlayer = new MediaPlayer();
             //begin playing the file
             mPlayer.Play();
         }

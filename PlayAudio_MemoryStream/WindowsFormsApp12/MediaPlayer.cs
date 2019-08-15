@@ -4,16 +4,16 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using WindowsFormsApp12.Properties;
 
 namespace WindowsFormsApp12
 {
     class MediaPlayer
     {
         System.Media.SoundPlayer soundPlayer;
-        public MediaPlayer(byte[] buffer)
+        public MediaPlayer()
         {
-            MemoryStream memoryStream = new MemoryStream(buffer, true);
-            soundPlayer = new System.Media.SoundPlayer(memoryStream);
+            soundPlayer = new System.Media.SoundPlayer(Resources.Ring08);
         }
         public void Play() { soundPlayer.Play(); }
         public void Play(byte[] buffer)
